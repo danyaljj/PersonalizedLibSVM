@@ -18,64 +18,7 @@ public class test {
 	public static void RegressionExample()
 	{ 
 		System.out.println("Salam! This is a toy code! ");
-		// changing options : 
-		/*
-		 case 's':
-					param.svm_type = atoi(argv[i]);
-					break;
-				case 't':
-					param.kernel_type = atoi(argv[i]);
-					break;
-				case 'd':
-					param.degree = atoi(argv[i]);
-					break;
-				case 'g':
-					param.gamma = atof(argv[i]);
-					break;
-				case 'r':
-					param.coef0 = atof(argv[i]);
-					break;
-				case 'n':
-					param.nu = atof(argv[i]);
-					break;
-				case 'm':
-					param.cache_size = atof(argv[i]);
-					break;
-				case 'c':
-					param.C = atof(argv[i]);
-					break;
-				case 'e':
-					param.eps = atof(argv[i]);
-					break;
-				case 'p':
-					param.p = atof(argv[i]);
-					break;
-				case 'h':
-					param.shrinking = atoi(argv[i]);
-					break;
-				case 'b':
-					param.probability = atoi(argv[i]);
-					break;
-				case 'w':
-					++param.nr_weight;
-					{
-						int[] old = param.weight_label;
-						param.weight_label = new int[param.nr_weight];
-						System.arraycopy(old,0,param.weight_label,0,param.nr_weight-1);
-					}
-
-					{
-						double[] old = param.weight;
-						param.weight = new double[param.nr_weight];
-						System.arraycopy(old,0,param.weight,0,param.nr_weight-1);
-					}
-		
-					param.weight_label[param.nr_weight-1] = atoi(argv[i-1].substring(2));
-					param.weight[param.nr_weight-1] = atof(argv[i]);
-					break;
-				default:
-					System.err.print("unknown option\n");
-		*/
+	
 		svm_parameter param = new svm_parameter();
 
 		// default values
