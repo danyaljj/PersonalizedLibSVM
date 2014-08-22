@@ -61,6 +61,17 @@ public class test {
 			for (double b: a)
 				System.out.println(b+" ");
 		}
+		
+		// run on train data 
+		for( int i = 0; i < prob.l; i++)
+		{
+			svm_node[] x_test = prob.x[i]; 
+			double d = svm.svm_predict(model, x_test);
+			System.out.println("X[0] = " + x_test[0].value + "\t\t\t Y = "
+					+ Math.sin(2* i) + "\t\t\t The predicton = " + d);
+		}
+		
+		// run on test data 
 		for( int i = 0; i < test_length; i++)
 		{
 			svm_node[] x_test = new svm_node[1];
